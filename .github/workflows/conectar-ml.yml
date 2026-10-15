@@ -1,0 +1,32 @@
+name: Conectar Mercado Libre (una sola vez)
+
+on:
+  workflow_dispatch:
+    inputs:
+      code:
+        description: "Código que aparece en la página auth.html después de autorizar (vale 10 minutos)"
+        required: true
+
+jobs:
+  conectar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Cambiar el código por un token
+        env:
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
+          REDIRECT: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/auth.html
+          CODE: ${{ github.event.inputs.code }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          RESP=$(curl -s -X POST https://api.mercadolibre.com/oauth/token \
+            -H "accept: application/json" -H "content-type: application/x-www-form-urlencoded" \
+            --data-urlencode "grant_type=authorization_code" \
+            --data-urlencode "client_id=$ML_CLIENT_ID" \
+            --data-urlencode "client_secret=$ML_CLIENT_SECRET" \
+            --data-urlencode "code=$CODE" \
+            --data-urlencode "redirect_uri=$REDIRECT")
+          RT=$(echo "$RESP" | python3 -c "import sys,json;print(json.load(sys.stdin).get('refresh_token',''))")
+          if [ -z "$RT" ]; then echo "Mercado Libre no aceptó el código:"; echo "$RESP" | python3 -c "import sys,json;d=json.load(sys.stdin);print(d.get('message'),d.get('error'))"; exit 1; fi
+          echo "$RT" | gh secret set ML_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY"
+          echo "Conectado. El stock se va a actualizar solo cada hora."

@@ -1,0 +1,322 @@
+{
+ "fuente": "historias de Instagram (octubre 2026)",
+ "actualizado": "2026-10-15",
+ "autos": [
+  {
+   "id": "wrv-2026",
+   "marca": "Honda",
+   "modelo": "WR-V",
+   "version": "EXL CVT",
+   "anio": 2026,
+   "km": 0,
+   "motor": "1.5",
+   "combustible": "Nafta",
+   "caja": "Automática CVT",
+   "carroceria": "SUV",
+   "condicion": "0km",
+   "fotos": [
+    "img/stock/wrv-2026.jpg"
+   ],
+   "destacado": true,
+   "nota": "Tope de gama. Entrega inmediata.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "honda-wr-v-exl-cvt-2026"
+  },
+  {
+   "id": "tracker-2026",
+   "marca": "Chevrolet",
+   "modelo": "Tracker",
+   "version": "LT AT",
+   "anio": 2026,
+   "km": 2900,
+   "motor": "1.2 Turbo",
+   "combustible": "Nafta",
+   "caja": "Automática",
+   "carroceria": "SUV",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/tracker-2026.jpg"
+   ],
+   "destacado": true,
+   "nota": "Igual a 0 km.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "chevrolet-tracker-lt-at-2026"
+  },
+  {
+   "id": "saveiro-2025",
+   "marca": "Volkswagen",
+   "modelo": "Saveiro",
+   "version": "Comfortline Doble Cabina",
+   "anio": 2025,
+   "km": 951,
+   "motor": "1.6 MSI",
+   "combustible": "Nafta",
+   "caja": "Manual",
+   "carroceria": "Pick-up",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/saveiro-2025.jpg"
+   ],
+   "destacado": true,
+   "nota": "951 km, igual a 0 km.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "volkswagen-saveiro-comfortline-doble-cabina-2025"
+  },
+  {
+   "id": "cruze-2021",
+   "marca": "Chevrolet",
+   "modelo": "Cruze",
+   "version": "LT MT Full",
+   "anio": 2021,
+   "km": 45298,
+   "motor": "1.4 Turbo",
+   "combustible": "Nafta",
+   "caja": "Manual",
+   "carroceria": "Sedán",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/cruze-2021.jpg"
+   ],
+   "destacado": false,
+   "nota": "Único por su estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "chevrolet-cruze-lt-mt-full-2021"
+  },
+  {
+   "id": "208-active-2021",
+   "marca": "Peugeot",
+   "modelo": "208",
+   "version": "Active Pack",
+   "anio": 2021,
+   "km": 47818,
+   "motor": "1.6",
+   "combustible": "Nafta",
+   "caja": null,
+   "carroceria": "Hatchback",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/208-active-2021.jpg"
+   ],
+   "destacado": false,
+   "nota": "Único por su estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "peugeot-208-active-pack-2021"
+  },
+  {
+   "id": "cronos-drive-2021",
+   "marca": "Fiat",
+   "modelo": "Cronos",
+   "version": "Drive S-Design Full",
+   "anio": 2021,
+   "km": 85217,
+   "motor": "1.3",
+   "combustible": "Nafta",
+   "caja": null,
+   "carroceria": "Sedán",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/cronos-drive-2021.jpg"
+   ],
+   "destacado": false,
+   "nota": "Único por su estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "fiat-cronos-drive-s-design-full-2021"
+  },
+  {
+   "id": "onix-2019",
+   "marca": "Chevrolet",
+   "modelo": "Onix",
+   "version": "LS Joy+",
+   "anio": 2019,
+   "km": 36059,
+   "motor": "1.4",
+   "combustible": "Nafta",
+   "caja": null,
+   "carroceria": "Hatchback",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/onix-2019.jpg"
+   ],
+   "destacado": false,
+   "nota": "Único por su estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "chevrolet-onix-ls-joy-2019"
+  },
+  {
+   "id": "polo-2018",
+   "marca": "Volkswagen",
+   "modelo": "Polo",
+   "version": "Trendline Full",
+   "anio": 2018,
+   "km": 93629,
+   "motor": "1.6 MSI",
+   "combustible": "Nafta",
+   "caja": null,
+   "carroceria": "Hatchback",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/polo-2018.jpg"
+   ],
+   "destacado": false,
+   "nota": "Único por su estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "volkswagen-polo-trendline-full-2018"
+  },
+  {
+   "id": "cronos-precision-2018",
+   "marca": "Fiat",
+   "modelo": "Cronos",
+   "version": "Precision AT Full",
+   "anio": 2018,
+   "km": 139175,
+   "motor": "1.8",
+   "combustible": "Nafta",
+   "caja": "Automática",
+   "carroceria": "Sedán",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/cronos-precision-2018-a.jpg",
+    "img/stock/cronos-precision-2018-b.jpg"
+   ],
+   "destacado": false,
+   "nota": "Tope de gama. Único por su estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "fiat-cronos-precision-at-full-2018"
+  },
+  {
+   "id": "focus-2017",
+   "marca": "Ford",
+   "modelo": "Focus",
+   "version": "SE Full MT",
+   "anio": 2017,
+   "km": 149967,
+   "motor": "2.0",
+   "combustible": "Nafta",
+   "caja": "Manual",
+   "carroceria": "Sedán",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/focus-2017.jpg"
+   ],
+   "destacado": false,
+   "nota": "Único por su estado. Financiación disponible.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "ford-focus-se-full-mt-2017"
+  },
+  {
+   "id": "ka-2017",
+   "marca": "Ford",
+   "modelo": "Ka",
+   "version": "S 5 puertas",
+   "anio": 2017,
+   "km": 68143,
+   "motor": "1.5",
+   "combustible": "Nafta",
+   "caja": null,
+   "carroceria": "Hatchback",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/ka-2017.jpg"
+   ],
+   "destacado": false,
+   "nota": "Único por su estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "ford-ka-s-5-puertas-2017"
+  },
+  {
+   "id": "logan-2016",
+   "marca": "Renault",
+   "modelo": "Logan",
+   "version": "Authentique Plus",
+   "anio": 2016,
+   "km": 115184,
+   "motor": "1.6",
+   "combustible": "Nafta",
+   "caja": null,
+   "carroceria": "Sedán",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/logan-2016.jpg"
+   ],
+   "destacado": false,
+   "nota": "Impecable estado. Recién hecho el cambio de kit de distribución original.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "renault-logan-authentique-plus-2016"
+  },
+  {
+   "id": "208-allure-2014",
+   "marca": "Peugeot",
+   "modelo": "208",
+   "version": "Allure Full",
+   "anio": 2014,
+   "km": null,
+   "motor": "1.5",
+   "combustible": "Nafta",
+   "caja": null,
+   "carroceria": "Hatchback",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/208-allure-2014.jpg"
+   ],
+   "destacado": false,
+   "nota": "Impecable estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "peugeot-208-allure-full-2014"
+  },
+  {
+   "id": "suran-2014",
+   "marca": "Volkswagen",
+   "modelo": "Suran",
+   "version": "Comfortline",
+   "anio": 2014,
+   "km": 101874,
+   "motor": "1.6",
+   "combustible": "Nafta",
+   "caja": null,
+   "carroceria": "Monovolumen",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/suran-2014.jpg"
+   ],
+   "destacado": false,
+   "nota": "Impecable estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "volkswagen-suran-comfortline-2014"
+  },
+  {
+   "id": "civic-2012",
+   "marca": "Honda",
+   "modelo": "Civic",
+   "version": "EXS MT Full",
+   "anio": 2012,
+   "km": 123350,
+   "motor": "1.8",
+   "combustible": "Nafta",
+   "caja": "Manual",
+   "carroceria": "Sedán",
+   "condicion": "usado",
+   "fotos": [
+    "img/stock/civic-2012.jpg"
+   ],
+   "destacado": false,
+   "nota": "Tope de gama. Único por su estado.",
+   "ml_url": null,
+   "precio": null,
+   "slug": "honda-civic-exs-mt-full-2012"
+  }
+ ]
+}

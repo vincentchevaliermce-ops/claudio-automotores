@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Disallow: /auth.html
+Sitemap: https://vincentchevaliermce-ops.github.io/claudio-automotores/sitemap.xml

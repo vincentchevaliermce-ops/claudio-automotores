@@ -1,0 +1,38 @@
+name: Stock desde Mercado Libre
+
+on:
+  schedule:
+    - cron: "17 * * * *"   # cada hora
+  workflow_dispatch: {}     # botón "Run workflow" para actualizar al instante
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Leer publicaciones de Mercado Libre
+        env:
+          ML_CLIENT_ID: ${{ secrets.ML_CLIENT_ID }}
+          ML_CLIENT_SECRET: ${{ secrets.ML_CLIENT_SECRET }}
+          ML_REFRESH_TOKEN: ${{ secrets.ML_REFRESH_TOKEN }}
+        run: python3 scripts/sync_ml.py
+      - name: Generar las páginas de cada auto
+        run: python3 scripts/build_pages.py
+      - name: Guardar el nuevo token de Mercado Libre
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          if [ -s new_refresh_token.txt ]; then
+            gh secret set ML_REFRESH_TOKEN --repo "$GITHUB_REPOSITORY" < new_refresh_token.txt
+            rm new_refresh_token.txt
+          fi
+      - name: Publicar el stock nuevo
+        run: |
+          git config user.name "stock-bot"
+          git config user.email "stock-bot@users.noreply.github.com"
+          git add stock.json autos sitemap.xml robots.txt 2>/dev/null || git add stock.json autos
+          git diff --cached --quiet || (git commit -m "Stock actualizado desde Mercado Libre" && git push)
